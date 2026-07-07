@@ -1,6 +1,6 @@
-const express = require('express');
-const sha1 = require('sha1');
-const dbClient = require('../utils/db');
+import express from 'express';
+import sha1 from 'sha1';
+import dbClient from '../utils/db.js';
 
 const router = express.Router();
 
@@ -33,4 +33,4 @@ router.post('/users', async (req, res) => {
   });
 });
 
-module.exports = router;
+export default router;

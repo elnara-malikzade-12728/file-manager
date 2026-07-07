@@ -1,4 +1,4 @@
-const { MongoClient, ObjectId } = require('mongodb');
+import { MongoClient, ObjectId } from 'mongodb';
 
 const host = process.env.DB_HOST || 'localhost';
 const port = process.env.DB_PORT || 27017;
@@ -24,5 +24,5 @@ class DBClient {
     return new ObjectId(id);
   }
 }
-
-module.exports = new DBClient();
+const dbClient = new DBClient();
+export default dbClient;

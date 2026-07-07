@@ -1,8 +1,7 @@
-const express = require('express');
-const { v4: uuidv4 } = require('uuid');
-
-const redisClient = require('../utils/redis');
-const dropQueue = require('../utils/queue');
+import express from 'express';
+import  { v4 as uuidv4 } from 'uuid';
+import redisClient from '../utils/redis.js';
+import dropQueue from '../utils/queue.js';
 
 const router = express.Router();
 
@@ -68,4 +67,4 @@ router.get('/drops/:token', async (req, res) => {
   });
 });
 
-module.exports = router;
+export default router;

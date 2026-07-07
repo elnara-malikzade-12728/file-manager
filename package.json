@@ -1,0 +1,30 @@
+{
+  "name": "file-manager",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elnara-malikzade-12728/file-manager.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/elnara-malikzade-12728/file-manager/issues"
+  },
+  "homepage": "https://github.com/elnara-malikzade-12728/file-manager#readme",
+  "dependencies": {
+    "bull": "^4.16.5",
+    "express": "^5.2.1",
+    "mongodb": "^7.4.0",
+    "redis": "^6.1.0",
+    "sha1": "^1.1.1",
+    "uuid": "^14.0.1"
+  }
+}

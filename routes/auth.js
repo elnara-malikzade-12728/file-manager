@@ -1,9 +1,8 @@
-const express = require('express');
-const sha1 = require('sha1');
-const { v4: uuidv4 } = require('uuid');
-
-const dbClient = require('../utils/db');
-const redisClient = require('../utils/redis');
+import express from 'express';
+import sha1 from 'sha1';
+import { v4 as uuidv4 } from 'uuid';
+import dbClient from '../utils/db.js';
+import redisClient from '../utils/redis.js';
 
 const router = express.Router();
 
@@ -34,4 +33,4 @@ router.get('/connect', async (req, res) => {
   return res.status(200).json({ token });
 });
 
-module.exports = router;
+export default router;

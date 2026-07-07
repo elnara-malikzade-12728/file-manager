@@ -1,4 +1,4 @@
-const Queue = require('bull');
+import Queue from 'bull';
 
 const dropQueue = new Queue('dropQueue', {
   redis: {
@@ -7,4 +7,4 @@ const dropQueue = new Queue('dropQueue', {
   },
 });
 
-module.exports = dropQueue;
+export default dropQueue;
